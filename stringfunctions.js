@@ -30,4 +30,10 @@ console.log("Slice Operation: " ,string1.slice(2,5))
 // performing slicing operation after 3 location 
 console.log("Slicing after 3 location: ",string1.slice(4))
 
+// creating a string which will add the numbers and will print out the age 
+let rupee1 = 10
+let rupee2 = 20
+let str = "Boy have total money"
 
+let output = str +" " + (+rupee1 + +rupee2)
+console.log(output)
