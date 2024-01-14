@@ -158,3 +158,27 @@ const funPDestruct = ({Name: valName, Company: valCompany}) =>
     console.log("Company of the Employee using Parameter destruct is : ",valCompany )
 }
 funPDestruct(sampleObj)
+
+// Working with the call back functions 
+
+const function1 = (num) => {
+    return `Value is ${num}`
+}
+
+const funtioncallback = (callback) =>{
+    let name  = "Harshit"
+    console.log(callback(name))
+}
+funtioncallback(function1)
+
+// function returning functions 
+
+const functionreturn = ()=>{
+    const functioninside = ()=>{
+        console.log("This function is returning something using higher order functions")
+    } 
+    return functioninside
+}
+
+const a = functionreturn()
+a()
