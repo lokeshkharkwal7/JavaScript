@@ -95,28 +95,20 @@ console.log("Consoling the output of the first no: ", arrow_Fun("This is Us"))
 const arrow_return = (n1, n2) => n1+n2
 console.log("Minimilistic Arrow function output: " , arrow_return(5,5))
 
-
 // Wrokgin with the scopes of the functions 
-
 let v = 'valueglobal'
-if (true)
-{
-    function fun()
-    {
+if (true){
+    function fun(){
         let v = "valuefun"
         console.log("inside fun",v)
     }
     
-    function fun2()
-    {
+    function fun2(){
         let v = 'valuefun2'
-        function fun3()
-        {
+        function fun3(){
             console.log("inside fun 2 and in fun 3",v)
         }
-        fun3()
-    }
-}
+        fun3()}}
 console.log(v)
 fun()
 console.log(v)
@@ -179,6 +171,39 @@ const functionreturn = ()=>{
     } 
     return functioninside
 }
-
 const a = functionreturn()
 a()
+
+// Practicing the call back function from scratch 
+function perform_callback (functioN){
+    num = "Variable from the Mongo DB Server"
+    functioN(num)
+}
+
+function callback(name){
+    console.log(`Callback Function : The value that you are looking for is : ${name}`)
+}
+perform_callback(callback)
+
+// function returning functions
+function returningfunc(functionN){
+    let namee = "Value from the MongoDB Server"
+    return functionN(namee)
+}
+function callback(name){
+    return `The name is with the help of callback and returning fun is :${name}`
+}
+console.log(returningfunc(callback))
+
+// writing a function that will flattern an array
+function flattern_array(array){
+    // example the array is [[1,2],[3,4],[5,6]] 
+    const result = []
+    for (let i in array) {
+        for (let j of array[i]) {
+            result.push(j)
+        }}
+    return result
+}
+array = [[1,2],[3,4],[5,6,7]] 
+console.log(flattern_array(array))
