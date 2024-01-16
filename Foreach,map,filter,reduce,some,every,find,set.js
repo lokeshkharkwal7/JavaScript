@@ -1,12 +1,4 @@
 numbers = [1,2,3,4,5,9]
-// function functionName(index, number){
-//     return `Element in the list ${index} which is: ${number[index]}`
-// }
-// numbers.forEach(function(element) {
-//     console.log(`Value of the elements are : ${element*2}`)
-    
-// });
-
 
 function funname(element){
     console.log('Elements are :', element)
