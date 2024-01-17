@@ -78,11 +78,13 @@ console.log(copythisArgumentFunction())
 
 // Perfect approach of making the code reusable 
 
-functionList = {
+function afun(){}
+afun.prototype.functionList = {
     is18: function(){ return this.age>18 },
     isCoder: function(){return this.coder} ,
     isSinger : function(){return this.sing}
 }
+
 
 function getUsers(name , marks , age , coder, sing ){
     object = {}
@@ -91,8 +93,9 @@ function getUsers(name , marks , age , coder, sing ){
     object.age = age 
     object.coder = coder
     object.sing = sing
-    object.is18 = functionList.is18.call(object)
-    object.isCoder = functionList.isCoder.call(object)
+    functionList= afun.prototype.functionList //accessing the protype
+    object.is18 = functionList.is18.call(object)//using functions thare are stored in prototype list
+    object.isCoder = functionList.isCoder.call(object) // using call to use the this keyword for the object
     object.isSinger = functionList.isSinger.call(object)
     return object
 }
