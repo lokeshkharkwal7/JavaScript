@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Form</title>
+    <script src="bubble.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            font-size: 3rem;
+        }
+
+        input[type="submit"] {
+            padding: 8px 16px;
+            font-size: 1.5rem;
+            background-color: #030303;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .item{
+            font-size: 3.5rem;
+        }
+        .todo-list{
+            height: 100vh;
+            align-items: center;
+            flex: center;
+            justify-content: center;
+            background: #ed9d9d;
+        }
+        .list{
+            font-size: 1.4rem;
+            width: 300px;
+        }
+        .bt-class{
+            text-align: center;
+            justify-content: center;
+            padding: .7rem;
+            
+        }
+        #todo-listul{
+            background: #eecdcd;
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <form id="todo-form">
+        <div class="item"><label for="todo-item">To-Do ITEM:</label>
+        </div>
+        <input type="text" id="todo-item" placeholder="Enter a to-do item" required>
+        <br><br>
+        <input type="submit" value="Add to To-Do List">
+    </form>
+
+    <div class="todo-list">
+        <ul class = "list" id = "todo-listul">Task Status : <br><br></ul> 
+    
+  
+    </div>
+
+</body>
+</html>
