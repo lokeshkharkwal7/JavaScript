@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+/* .car{
+    height: 50;
+    width: 100px;
+    background-color: yellow;
+    padding: 5% 5% 5% 5%; 
+    margin: 50% 50% 50% 50%;
+    font-size: 1.3rem;
+} */
+.car1{
+    /* position: absolute; */
+    height: 50px;
+    width: 150px;
+    background-color: red;
+
+    font-size: 1.3rem;
+}
+.car2{
+    /* position: absolute; */
+    /* top: 20%;
+    left : 20%;
+    right : 10%;
+    bottom: 20%; */
+
+    height: 50px;
+    width: 130px;
+    background-color: green;
+ 
+    font-size: 1.3rem;
+}
+.car3{
+    /* position: absolute; */
+    height: 50px;
+    width: 100px;
+    background-color: blue;
+
+    font-size: 1.3rem;
+}
+
+#box{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-color: red;
+
+}
+
+#chotabox{
+    position: absolute;
+    left: 80%;
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+
+}

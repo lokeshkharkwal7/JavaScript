@@ -73,7 +73,7 @@ function performAction(heading, color , interval){
         },interval)
     })}
 performAction(heading1,'Red',1000)
-        .then(()=>performAction(heading2,'Green',500))
+        .then(()=>performAction(heading2,'Green',500)) //returning performing action
         .then(()=> performAction(heading3,'Blue',500)
         .then(()=> performAction(heading3,'Yellow',500))
         .then(()=> performAction(heading4,'Violet',500))
