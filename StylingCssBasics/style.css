@@ -16,6 +16,70 @@ html,body{
     margin: 50% 50% 50% 50%;
     font-size: 1.3rem;
 } */
+
+
+.container{
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+
+    height: 50%;
+    width: 100%;
+
+
+}
+.section1{  
+
+}
+.section2{ 
+
+}
+.section3{
+
+}
+#img1{
+    
+    height:100%;
+    width: 100%;    
+    background-size: cover;
+
+
+}
+
+#img2{
+    
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+    
+}
+#img3{
+    
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .car1{
     /* position: absolute; */
     height: 50px;
@@ -37,6 +101,7 @@ html,body{
  
     font-size: 1.3rem;
 }
+
 .car3{
     /* position: absolute; */
     height: 50px;
